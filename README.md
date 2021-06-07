@@ -2,6 +2,9 @@
 
 ## Table of Contents
 
+ - [Brief](https://github.com/TSamson-QA/Practical_Project#brief)
+ - [Scope](https://github.com/TSamson-QA/Practical_Project#scope)
+ - [My Approach](https://github.com/TSamson-QA/Practical_Project#my-approach)
 
 
 
