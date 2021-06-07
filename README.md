@@ -37,3 +37,8 @@ My first draft of my Jira board has the first issues that need to be addressed, 
 You can find the link to the Jira Board [here.](https://ajcacademyproject.atlassian.net/jira/software/projects/PP/boards/7)
 
 
+
+
+![Initial_Jira](https://github.com/TSamson-QA/Practical_Project/blob/main/images/jira-1.PNG)
+
+
