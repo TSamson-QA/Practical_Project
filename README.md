@@ -5,6 +5,7 @@
  - [Brief](https://github.com/TSamson-QA/Practical_Project#brief)
  - [Scope](https://github.com/TSamson-QA/Practical_Project#scope)
  - [My Approach](https://github.com/TSamson-QA/Practical_Project#my-approach)
+ - [Jira Board](https://github.com/TSamson-QA/Practical_Project#jira-board)
 
 
 
@@ -30,4 +31,9 @@ For my approach, I decided to create an application to generate a D&D character,
 From these two Objects, a suggested Alignment will be generated. To achieve this, I have considered assigning numerical values to the Classes and Races and placing them in an Array.
 Service 2 will select a random Class (and its assigned value). Service 3 will select a random Race (and its assigned value.)
 Service 4 will then collect the values, and calculate an average, and output a suggested Alignment for your character based on the values assigned and the average of them.
+
+## Jira Board
+My first draft of my Jira board has the first issues that need to be addressed, as well as issues that will need to be worked on through the project.
+You can find the link to the Jira Board [here.](https://ajcacademyproject.atlassian.net/jira/software/projects/PP/boards/7)
+
 
