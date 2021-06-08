@@ -5,12 +5,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    class_ = requests.get('http://class_api:5001/get_class')
-    race = requests.get('http://race_api:5002/get_race')
-    gen_class = class_.value()
-    gen_race = race.value() 
+    class_ = requests.get('http://class_api:5001/get_class').text
+    race = requests.get('http://race_api:5002/get_race').text
+    
+    class_dict = {'Cleric':1, 'Fighter':2, 'Bard':3, 'Monk':4, 'Druid':5, 'Sorcerer':6, 'Warlock':7, 'Rogue':8, 'Barbarian':9}
+    race_dict = {'Dwarf':1, 'Halfling':2, 'Elf':3, 'Gnome':4, 'Human':5, 'Half-Elf':6, 'Tiefling':7, 'Dragonborn':8, 'Half-Orc':9}
 
-    align_value = round((int(class_.key) * int(race.key)) / 2)
+    class_val = class_dict.value(class_)
+    race_val = race_dict.value(race)
+
+    align_value = round((int(class_val) * int(race_val)) / 2)
 
     alignment = {1:'Lawful Good', 2:'Neutral Good', 3:'Chaotic Good', 
     4:'Lawful Neutral', 5:'True Neutral', 6:'Chaotic Neutral', 
@@ -20,7 +24,7 @@ def home():
 
 
     
-    return render_template('index.html', gen_race=gen_race, gen_class=gen_class, gen_alignment=gen_alignment)
+    return render_template('index.html', gen_race=race, gen_class=class_, gen_alignment=gen_alignment)
 
 
 
