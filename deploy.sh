@@ -20,12 +20,12 @@ docker run -d -p 5000:5000 \
     --network ${project_name}_network \
     ${project_name}_server
 
-docker run -d \
+docker run -d -p 5001:5001\
     --name class_gen_api \
     --network ${project_name}_network \
     class_gen_api
 
-docker run -d \
+docker run -d -p 5002:5002\
     --name race_gen_api \
     --network ${project_name}_network \
     race_gen_api
