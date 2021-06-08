@@ -6,10 +6,10 @@ project_name=character_generator
 docker build -t ${project_name}_server server
 
 # Build class_api
-docker build -t class_api class_api 
+docker build -t class_gen_api class_api 
 
 # Build race_api
-docker build -t race_api race_api 
+docker build -t race_gen_api race_api 
 
 # Create Network
 docker network create ${project_name}_network 
@@ -20,12 +20,12 @@ docker run -d -p 5000:5000 \
     --network ${project_name}_network \
     ${project_name}_server
 
-docker run -d -p 5001:5001\
-    --name class_api \
+docker run -d \
+    --name class_gen_api \
     --network ${project_name}_network \
-    class_api
+    class_gen_api
 
-docker run -d -p 5002:5002\
-    --name race_api \
+docker run -d  \
+    --name race_gen_api \
     --network ${project_name}_network \
-    race_api
+    race_gen_api
