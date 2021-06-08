@@ -14,7 +14,7 @@ def home():
     class_val = class_dict.get(class_)
     race_val = race_dict.get(race)
 
-    align_value = round((class_val * race_val) / 2)
+    align_value = round((class_val + race_val) / 2)
     
 
     alignment = {1:'Lawful Good', 2:'Neutral Good', 3:'Chaotic Good', 
