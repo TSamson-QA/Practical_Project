@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import requests
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -7,7 +8,7 @@ def home():
     class_ = requests.get('http://class_api:5000/get_class')
     race = requests.get('http://race_api:5001/get_race')
     gen_class = class_.value()
-    gen_race = race.value()
+    gen_race = race.value() 
 
     align_value = round((int(class_.key) * int(race.key)) / 2)
 
