@@ -42,3 +42,8 @@ You can find the link to the Jira Board [here.](https://ajcacademyproject.atlass
 ![Initial_Jira](https://github.com/TSamson-QA/Practical_Project/blob/main/images/jira-1.PNG)
 
 
+
+# UPDATE JIRA BOARD WITH IMAGES
+# USE DOCKER-COMPOSE AND INTEGRATE SQL
+
+
