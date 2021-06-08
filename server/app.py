@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    class_ = requests.get('http://localhost:5001/get_class')
-    race = requests.get('http://localhost:5002/get_race')
+    class_ = requests.get('http://class_api:5001/get_class')
+    race = requests.get('http://race_api:5002/get_race')
     gen_class = class_.value()
     gen_race = race.value() 
 
