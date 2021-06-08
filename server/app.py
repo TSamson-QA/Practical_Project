@@ -11,8 +11,8 @@ def home():
     class_dict = {'Cleric':1, 'Fighter':2, 'Bard':3, 'Monk':4, 'Druid':5, 'Sorcerer':6, 'Warlock':7, 'Rogue':8, 'Barbarian':9}
     race_dict = {'Dwarf':1, 'Halfling':2, 'Elf':3, 'Gnome':4, 'Human':5, 'Half-Elf':6, 'Tiefling':7, 'Dragonborn':8, 'Half-Orc':9}
 
-    class_val = class_dict.value(class_)
-    race_val = race_dict.value(race)
+    class_val = class_dict.get(class_)
+    race_val = race_dict.get(race)
 
     align_value = round((int(class_val) * int(race_val)) / 2)
 
@@ -20,7 +20,7 @@ def home():
     4:'Lawful Neutral', 5:'True Neutral', 6:'Chaotic Neutral', 
     7:'Lawful Evil', 8:'Neutral Evil', 9:'Chaotic Evil'}
 
-    gen_alignment = alignment.value(align_value)
+    gen_alignment = alignment.get(align_value)
 
 
     
