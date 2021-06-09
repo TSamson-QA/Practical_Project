@@ -6,6 +6,7 @@
  - [Scope](https://github.com/TSamson-QA/Practical_Project#scope)
  - [My Approach](https://github.com/TSamson-QA/Practical_Project#my-approach)
  - [Jira Board](https://github.com/TSamson-QA/Practical_Project#jira-board)
+ - [First Working Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#first-working-build)
 
 
 
