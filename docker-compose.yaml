@@ -1,0 +1,19 @@
+version: '3.3'
+services:
+    server:
+        container_name: character_gen_server
+        image: tsamsonqa/character_gen_server
+        build: ./server
+        ports: 
+        -   published: 5000
+            target: 5000
+
+    class_api:
+        container_name: class_api
+        image: tsamsonqa/class_api
+        build: ./class_api
+        
+    race_api:
+        container_name: race_api
+        image: tsamsonqa/race_api
+        build: ./race_api
