@@ -43,7 +43,22 @@ You can find the link to the Jira Board [here.](https://ajcacademyproject.atlass
 
 
 
-# UPDATE JIRA BOARD WITH IMAGES
-# USE DOCKER-COMPOSE AND INTEGRATE SQL
+## First Working Build
+Version 1.0.0 contains all working services, all created on different branches and merged into my Dev branch for testing, and eventual deployment to Main when completed.
+Service 2 and 3 use random.choice to select a random class and race, respectively, both using different ports, which is accessed by service 4. Service 4 collects the
+random selections and from these, calculates a suggested Alignment. The class, race and alignment are then displayed on HTML. When the user refreshes the page,
+a different selection of objects are visible.
+
+All services are successfully deployed via Docker and Docker Compose on a virtual machine.
+For the next build. I am planning to fully integrate SQL services to display a number of previous object sets that have been generated randomly. I have updated my jira board
+based on this.
+
+
+
+![FWD Jira](https://github.com/TSamson-QA/Practical_Project/blob/main/images/jira-2.PNG)
+
+
+
+# INTEGRATE SQL
 
 
