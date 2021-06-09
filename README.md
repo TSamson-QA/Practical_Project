@@ -50,6 +50,8 @@ Service 2 and 3 use random.choice to select a random class and race, respectivel
 random selections and from these, calculates a suggested Alignment. The class, race and alignment are then displayed on HTML. When the user refreshes the page,
 a different selection of objects are visible.
 
+![FWB Image](https://github.com/TSamson-QA/Practical_Project/blob/main/images/FWB_image.PNG)
+
 All services are successfully deployed via Docker and Docker Compose on a virtual machine.
 For the next build. I am planning to fully integrate SQL services to display a number of previous object sets that have been generated randomly. I have updated my jira board
 based on this.
