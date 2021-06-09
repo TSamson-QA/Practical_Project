@@ -15,9 +15,6 @@ class Characters(db.Model):
     db_race = db.Column(db.String(20), nullable=False)
     db_alignment = db.Column(db.String(20), nullable=False)
 
-
-
-
 @app.route('/')
 def home():
     class_ = requests.get('http://class_api:5001/get_class').text
