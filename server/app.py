@@ -3,6 +3,7 @@ from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 import requests
 from os import getenv
+from sqlalchemy import desc
 
 app = Flask(__name__)
 db = SQLAlchemy(app)
@@ -34,7 +35,7 @@ def home():
 
     gen_alignment = alignment.get(align_value)
 
-    last_characters = Characters.query.all()
+    last_characters = Characters.query.order_by(desc(Characters.id)).limit(5).all()
     db.session.add(
         Characters(
             db_class_ = class_,
