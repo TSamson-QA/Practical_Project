@@ -14,6 +14,7 @@ class Characters(db.Model):
 
 
 
+
 @app.route('/')
 def home():
     class_ = requests.get('http://class_api:5001/get_class').text
