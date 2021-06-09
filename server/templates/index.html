@@ -10,7 +10,16 @@
             <br>
             So your suggested Alignment is {{ gen_alignment }}
             <br>
- 
+    
+        
+        <h3>Previously Generated Characters</h3>
+        <p>
+            {% for gen_class in last_characters %}
+            The generated character is a {{ gen_class.db_race }} {{ gen_class.db_class_ }} with an alignment of {{ gen_class.db_alignment }}
+            <br>
+            {% endfor %}
+        </p>
+
         
         
      </div>
