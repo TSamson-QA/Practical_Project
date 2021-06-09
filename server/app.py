@@ -37,8 +37,8 @@ def home():
     last_characters = Characters.query.all()
     db.session.add(
         Characters(
-            db_class_ = class_.text,
-            db_race = race.text,
+            db_class_ = class_,
+            db_race = race,
             db_alignment = gen_alignment
             
         )
