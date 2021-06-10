@@ -11,13 +11,13 @@ pip3 install -r requirements.txt
 
 #run pytest with cov reports
 cd server
-python3 -m pytest --cov=app
+python3 -m pytest --cov=app --cov-report term-missing
 cd ..
 
 cd class_api
-python3 -m pytest --cov=class_app
+python3 -m pytest --cov=class_app --cov-report term-missing
 cd ..
 
 cd race_api
-python3 -m pytest --cov=race_app
+python3 -m pytest --cov=race_app --cov-report term-missing
 cd ..
