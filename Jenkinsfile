@@ -10,6 +10,7 @@ pipeline{
                 //pytest
                 //run for each service
                 //produce cov reports
+                sh 'bash jenkins/test.sh'
             }
         }
         stage("Build"){
