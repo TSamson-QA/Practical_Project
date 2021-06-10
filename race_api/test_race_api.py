@@ -1,11 +1,11 @@
 from flask import url_for
 from flask_testing import TestCase
 
-from app import app
+from app import race_app
 
 class TestBase(TestCase):
     def create_app(self):
-        return app
+        return race_app
 
 class TestHome(TestBase):
     def test_get_race(self):
