@@ -11,4 +11,4 @@ class TestHome(TestBase):
     def test_get_class(self):
         for _ in range(20):
             response = self.client.get(url_for('get_class'))
-            self.assertIn(response.data,['Cleric', 'Fighter', 'Bard', 'Monk', 'Druid', 'Sorcerer', 'Warlock', 'Rogue', 'Barbarian'])
+            self.assertIn(response.data.decode("utf-8"),['Cleric', 'Fighter', 'Bard', 'Monk', 'Druid', 'Sorcerer', 'Warlock', 'Rogue', 'Barbarian'])

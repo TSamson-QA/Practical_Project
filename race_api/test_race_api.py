@@ -11,4 +11,4 @@ class TestHome(TestBase):
     def test_get_race(self):
         for _ in range(20):
             response = self.client.get(url_for('get_race'))
-            self.assertIn(response.data,['Dwarf', 'Halfling', 'Elf', 'Gnome', 'Human', 'Half-Elf', 'Tiefling', 'Dragonborn', 'Half-Orc'])
+            self.assertIn(response.data.decode("utf-8"),['Dwarf', 'Halfling', 'Elf', 'Gnome', 'Human', 'Half-Elf', 'Tiefling', 'Dragonborn', 'Half-Orc'])
