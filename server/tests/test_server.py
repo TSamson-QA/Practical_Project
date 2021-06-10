@@ -16,4 +16,4 @@ class TestHome(TestBase):
             mocker.get('http://race_api:5002/get_race', text=race)
             response = self.client.get(url_for('home'))
             self.assertEqual(response.status_code, 200)
-            self.assertIn(f'The generated character is a {race} {class_} with an alignment of {gen_alignment}', response.data)
+            self.assertIn(f'The generated character is a {app.race} {app.class_} with an alignment of {app.gen_alignment}', response.data)
