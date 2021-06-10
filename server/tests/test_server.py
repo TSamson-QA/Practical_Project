@@ -16,4 +16,4 @@ class TestHome(TestBase):
             mocker.get('http://race_api:5002/get_race', text='Human')
             response = self.client.get(url_for('home'))
             self.assertEqual(response.status_code, 200)
-            self.assertIn('The generated character is a Human Druid with an alignment of True Neutral', response.data)
+            self.assertIn(b'The generated character is a Human Druid with an alignment of True Neutral', response.data)
