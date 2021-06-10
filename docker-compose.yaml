@@ -9,13 +9,19 @@ services:
             target: 5000
         environment:
             DATABASE_URI: ${DATABASE_URI}
+        deploy:
+            replicas: 3
 
     class_api:
         container_name: class_api
         image: tsamsonqa/class_api
         build: ./class_api
+        deploy:
+            replicas: 3
         
     race_api:
         container_name: race_api
         image: tsamsonqa/race_api
         build: ./race_api
+        deploy:
+            replicas: 3
