@@ -2,6 +2,7 @@ pipeline{
     agent any
     environment{
         DATABASE_URI = credentials("DATABASE_URI")
+<<<<<<< HEAD
         
     }
     stages{
@@ -36,6 +37,19 @@ pipeline{
                 //
                 // ssh: docker stack deploy --compose-file docker-compose.yaml character_gen
                 //sh "bash jenkins/deploy_stack.sh"
+=======
+
+    }
+    stages{
+        stage("Configure Swarm"){
+            steps{
+                sh "cd ansible &&  /usr/bin/ansible-playbook -i inventory playbook.yaml"
+            }
+        }
+        stage("Deploy Application"){
+            steps{
+                sh "bash jenkins/deploy_stack.sh"
+>>>>>>> 48e5db860df65eab60620dac0eca81fbf129596b
             }
         }
     }
