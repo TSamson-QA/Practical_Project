@@ -20,4 +20,4 @@ cd ..
 
 cd race_api
 python3 -m pytest --cov=race_app
-cd..
+cd ..
