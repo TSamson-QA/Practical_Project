@@ -7,6 +7,7 @@
  - [My Approach](https://github.com/TSamson-QA/Practical_Project#my-approach)
  - [Jira Board](https://github.com/TSamson-QA/Practical_Project#jira-board)
  - [First Working Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#first-working-build)
+ - [Second Working Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#second-working-build)
 
 
 
@@ -37,12 +38,7 @@ Service 4 will then collect the values, and calculate an average, and output a s
 My first draft of my Jira board has the first issues that need to be addressed, as well as issues that will need to be worked on through the project.
 You can find the link to the Jira Board [here.](https://ajcacademyproject.atlassian.net/jira/software/projects/PP/boards/7)
 
-
-
-
 ![Initial_Jira](https://github.com/TSamson-QA/Practical_Project/blob/main/images/jira-1.PNG)
-
-
 
 ## First Working Build
 Version 1.0.0 contains all working services, all created on different branches and merged into my Dev branch for testing, and eventual deployment to Main when completed.
@@ -56,12 +52,17 @@ All services are successfully deployed via Docker and Docker Compose on a virtua
 For the next build. I am planning to fully integrate SQL services to display a number of previous object sets that have been generated randomly. I have updated my jira board
 based on this.
 
+![FWB Jira](https://github.com/TSamson-QA/Practical_Project/blob/main/images/jira-2.PNG)
+
+## Second Working Build
+Version 1.1.0 fully integrates an SQL database in order to have data persistence. An ID number is generated, and a class, race and alignment is attached to the ID. This allows the user to view the previous 5 generated characters.
+
+![WB2 image](https://github.com/TSamson-QA/Practical_Project/blob/main/images/WB2_image.PNG)
+
+Now that SQL has been fully integrated, the Jira board has been updated in accordance to this. Next to be added is Jenkins.
+
+![Jira3](https://github.com/TSamson-QA/Practical_Project/blob/main/images/jira-3.PNG)
 
 
-![FWD Jira](https://github.com/TSamson-QA/Practical_Project/blob/main/images/jira-2.PNG)
-
-
-
-# INTEGRATE SQL
 
 
