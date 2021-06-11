@@ -30,6 +30,7 @@ def home():
             db_race = race,
             db_alignment = alignment
             
+
         )
     )
 
