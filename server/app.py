@@ -21,6 +21,8 @@ def home():
     class_ = requests.get('http://class_api:5001/get_class').text
     race = requests.get('http://race_api:5002/get_race').text
      
+    # PUT IN TO SEPERATE API - PUT ALIGNMENT SEPERATE AND CALL HERE
+
     class_dict = {'Cleric':1, 'Fighter':2, 'Bard':3, 'Monk':4, 'Druid':5, 'Sorcerer':6, 'Warlock':7, 'Rogue':8, 'Barbarian':9}
     race_dict = {'Dwarf':1, 'Halfling':2, 'Elf':3, 'Gnome':4, 'Human':5, 'Half-Elf':6, 'Tiefling':7, 'Dragonborn':8, 'Half-Orc':9}
 
@@ -35,6 +37,9 @@ def home():
 
     gen_alignment = alignment.get(align_value)
 
+    # UP TO HERE
+
+    
     last_characters = Characters.query.order_by(desc(Characters.id)).limit(5).all()
     db.session.add(
         Characters(

@@ -7,7 +7,6 @@ sudo apt-get install python3-venv python3-pip -y
 python3 -m venv venv
 source venv/bin/activate
 
-cd ..
 pip3 install -r requirements.txt
 
 #run pytest with cov reports

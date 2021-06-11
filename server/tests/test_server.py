@@ -6,7 +6,26 @@ from app import app
 
 class TestBase(TestCase):
     def create_app(self):
+        
+        app.config.update(SQLALCHEMY_DATABASE_URI="sqlite:///",
+                DEBUG=True
+                )
         return app
+
+    def setUp(self):
+        """
+        Will be called before every test
+        """
+        # Create table
+        db.create_all()
+
+    def tearDown(self):
+        """
+        Will be called after every test
+        """
+
+        db.session.remove()
+        db.drop_all()
 
 class TestHome(TestBase):
     def test_home(self):
