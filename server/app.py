@@ -28,14 +28,14 @@ def home():
         Characters(
             db_class_ = class_,
             db_race = race,
-            db_alignment = gen_alignment
+            db_alignment = alignment
             
         )
     )
 
     db.session.commit()
         
-    return render_template('index.html', gen_race=race, gen_class=class_, gen_alignment=gen_alignment, last_characters=last_characters)
+    return render_template('index.html', gen_race=race, gen_class=class_, gen_alignment=alignment, last_characters=last_characters)
 
 
 
