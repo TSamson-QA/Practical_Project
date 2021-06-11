@@ -28,8 +28,7 @@ def home():
         Characters(
             db_class_ = class_,
             db_race = race,
-            db_alignment = gen_alignment
-            
+            db_alignment = gen_alignment   
         )
     )
 
