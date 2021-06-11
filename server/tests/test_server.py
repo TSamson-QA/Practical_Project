@@ -26,8 +26,7 @@ class TestBase(TestCase):
 
         db.session.remove()
         db.drop_all()
-
-class TestHome(TestBase):
+    
     def test_home(self):
         with requests_mock.Mocker() as mocker:
             mocker.get('http://class_api:5001/get_class', text='Druid')
@@ -35,3 +34,4 @@ class TestHome(TestBase):
             response = self.client.get(url_for('home'))
             self.assertEqual(response.status_code, 200)
             self.assertIn(b'The generated character is a Human Druid with an alignment of True Neutral', response.data)
+    
