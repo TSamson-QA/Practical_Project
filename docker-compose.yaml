@@ -25,3 +25,10 @@ services:
         build: ./race_api
         deploy:
             replicas: 3
+
+    alignment_api:
+        container_name: alignment_api
+        image: tsamsonqa/alignment_api:latest
+        build: ./alignment_api
+        deploy:
+            replicas: 3
