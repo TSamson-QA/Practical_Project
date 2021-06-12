@@ -20,7 +20,7 @@ class Characters(db.Model):
 def home():
     class_ = requests.get('http://class_api:5001/get_class').text
     race = requests.get('http://race_api:5002/get_race').text
-    alignment = requests.get('http://alignment_api:5003/get_alignment').text
+    alignment = requests.post('http://alignment_api:5003/get_alignment').text
 
 
     last_characters = Characters.query.order_by(desc(Characters.id)).limit(5).all()
