@@ -1,8 +1,8 @@
 version: '3.3'
 services:
     server:
-        container_name: character_gen_server
-        image: tsamsonqa/character_gen_server:latest
+        container_name: character_generator_server
+        image: tsamsonqa/character_generator_server:latest
         build: ./server
         ports: 
         -   published: 5000
