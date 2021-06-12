@@ -40,7 +40,7 @@ pipeline{
                 //install ansible on jenkins machine for Jenkins user
                 //ansible-playbook -i inventory.yaml playbook.yaml
                 sh 'cd ansible' 
-                sh '/.local/bin/ansible-playbook -i inventory.yaml playbook.yaml'
+                sh '~/.local/bin/ansible-playbook -i inventory.yaml playbook.yaml'
             }
         }
         stage("Deploy"){
