@@ -5,7 +5,7 @@
     state: latest
     update-cache: yes
     pkg:
-    - apt-transprt-https
+    - apt-transport-https
     - ca-certificates
     - curl
     - gnupg
