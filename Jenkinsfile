@@ -49,7 +49,7 @@ pipeline{
                 //
                 // ssh: docker stack deploy --compose-file docker-compose.yaml character_gen
                 //sh "bash jenkins/deploy_stack.sh"
-                sh 'echo deploy'
+                sh 'bash jenkins/deploy.sh'
 
             }
         }
