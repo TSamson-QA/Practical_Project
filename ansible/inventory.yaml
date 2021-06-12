@@ -3,7 +3,7 @@ all:
     managers:
       hosts:
         manager:
-    worker-1:
+    workers:
       hosts:
         worker-1:
 
