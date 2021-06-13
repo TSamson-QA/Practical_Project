@@ -18,6 +18,8 @@ services:
         build: ./class_api
         deploy:
             replicas: 3
+        ports:
+            - "5001:5001"
         
     race_api:
         container_name: race_api
@@ -25,6 +27,8 @@ services:
         build: ./race_api
         deploy:
             replicas: 3
+        ports:
+            - "5001:5001"
 
     alignment_api:
         container_name: alignment_api
@@ -32,3 +36,5 @@ services:
         build: ./alignment_api
         deploy:
             replicas: 3
+        ports:
+            - "5001:5001"
