@@ -5,6 +5,7 @@
  - [Brief](https://github.com/TSamson-QA/Practical_Project#brief)
  - [Scope](https://github.com/TSamson-QA/Practical_Project#scope)
  - [My Approach](https://github.com/TSamson-QA/Practical_Project#my-approach)
+ - [CI/CD](https://github.com/TSamson-QA/Practical_Project#continuous-integration-and-deployment)
  - [Jira Board](https://github.com/TSamson-QA/Practical_Project#jira-board)
  - [First Working Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#first-working-build)
  - [Second Working Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#second-working-build)
@@ -33,6 +34,25 @@ For my approach, I decided to create an application to generate a D&D character,
 From these two Objects, a suggested Alignment will be generated. To achieve this, I have considered assigning numerical values to the Classes and Races and placing them in an Array.
 Service 2 will select a random Class (and its assigned value). Service 3 will select a random Race (and its assigned value.)
 Service 4 will then collect the values, and calculate an average, and output a suggested Alignment for your character based on the values assigned and the average of them.
+
+## Continuous Integration and Deployment
+
+The below diagram shows the implementation of a CI-CD pipeline, used to allow the automation of testing and building.
+
+![CI-CD](https://github.com/TSamson-QA/Practical_Project/blob/main/images/CI-CD.png)
+
+In order to follow this planned pipeline, a Jenkins pipeline was set up.
+
+![Jenkins-Pipeline](https://github.com/TSamson-QA/Practical_Project/blob/main/images/Pipeline-Jenkins.PNG)
+
+As the image shows, there are several key steps in the pipeline:
+ 1. Checkout SCM: Pulls the GitHub Repo.
+ 2. Requirements: Installs requirements.
+ 3. Test: Tests are completed and reports are generated in Jenkins.
+ 4. Build: Compiles and builds files into docker images.
+ 5. Push: Images are pushed on to docker swarm machines
+ 6. Configuration Management: Configures docker machines to ensure they are all capable of running application.
+ 7. Deploy: Environmental variables are set and the stack is deployed with the Docker-compose file.
 
 ## Jira Board
 My first draft of my Jira board has the first issues that need to be addressed, as well as issues that will need to be worked on through the project.
