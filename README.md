@@ -92,7 +92,9 @@ While I am able to have the application deployed through Jenkins, there are, how
 
 Due to this error, which I was unable to fix, the application cannot be used as intended, as the final service cannot be ran this way, despite previously being ran on a local machine. For this reason, I do not think it is a problem within the logic of the program. I believe this is the line that is causing an issue:
 
-![Error-Line]
+![Error-Line](https://github.com/TSamson-QA/Practical_Project/blob/main/images/error-line.PNG)
+
+The marked line causes the failure, despite me ensuring that all elements were names correctly, including the requests HTTP. Due to this, I ensure that there was a backup I could use, as seen commented. This line sets the alignment manually, allowing the application to run, generating a random class and race as expected, but setting the alignment as True Neutral.
 
 
 
