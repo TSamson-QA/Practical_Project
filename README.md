@@ -83,6 +83,17 @@ Now that SQL has been fully integrated, the Jira board has been updated in accor
 
 ![Jira3](https://github.com/TSamson-QA/Practical_Project/blob/main/images/jira-3.PNG)
 
+## Final Working Build
+The final version of my application has fully integrated Jenkins, NGINX, Ansible, and Docker Swarm into it. The application is fully built, tested and deployed within Jenkins, as previously shown [here](https://github.com/TSamson-QA/Practical_Project#continuous-integration-and-deployment).
+
+While I am able to have the application deployed through Jenkins, there are, however, issues connecting to Service-4 through port 5003.
+
+![ConnectionError](https://github.com/TSamson-QA/Practical_Project/blob/main/images/error.PNG)
+
+Due to this error, which I was unable to fix, the application cannot be used as intended, as the final service cannot be ran this way, despite previously being ran on a local machine. For this reason, I do not think it is a problem within the logic of the program. I believe this is the line that is causing an issue:
+
+![Error-Line]
+
 
 
 
