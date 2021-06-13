@@ -25,7 +25,7 @@ pipeline{
             steps{
                 //docker-compose build
                 sh 'docker-compose down'
-                sh 'docker rm -f $(docker ps -a -q)'
+                sh 'docker system prune --force --all'
                 sh 'docker-compose build'
             }
         }
