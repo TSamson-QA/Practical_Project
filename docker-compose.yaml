@@ -28,7 +28,7 @@ services:
         deploy:
             replicas: 3
         ports:
-            - "5001:5001"
+            - "5002:5002"
 
     alignment_api:
         container_name: alignment_api
@@ -37,4 +37,4 @@ services:
         deploy:
             replicas: 3
         ports:
-            - "5001:5001"
+            - "5003:5003"
