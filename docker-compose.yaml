@@ -13,22 +13,22 @@ services:
             replicas: 3
 
     class_api:
-        container_name: character_generator_class_api
+        container_name: class_api
         image: tsamsonqa/class_api:latest
         build: ./class_api
         deploy:
-            replicas: 3
+            replicas: 2
         
     race_api:
-        container_name: character_generator_race_api
+        container_name: race_api
         image: tsamsonqa/race_api:latest
         build: ./race_api
         deploy:
-            replicas: 3
+            replicas: 2
 
     alignment_api:
-        container_name: character_generator_alignment_api
+        container_name: alignment_api
         image: tsamsonqa/alignment_api:latest
         build: ./alignment_api
         deploy:
-            replicas: 3
+            replicas: 2
