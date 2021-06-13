@@ -30,8 +30,5 @@ services:
         container_name: alignment_api
         image: tsamsonqa/alignment_api:latest
         build: ./alignment_api
-        ports: 
-        -   published: 5003
-            target: 5003
         deploy:
             replicas: 2
