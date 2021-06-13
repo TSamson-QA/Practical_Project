@@ -18,8 +18,8 @@ class Characters(db.Model):
 
 @app.route('/')
 def home():
-    class_ = requests.get('http://class_api:5001/get_class').text
-    race = requests.get('http://race_api:5002/get_race').text
+    class_ = requests.get('http://character_generator_class_api:5001/get_class').text
+    race = requests.get('http://character_generator_race_api:5002/get_race').text
     alignment = requests.get('http://character_generator_alignment_api:5003/get_alignment').text
     #alignment = "True Neutral"
 
