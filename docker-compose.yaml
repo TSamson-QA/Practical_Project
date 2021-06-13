@@ -1,21 +1,34 @@
 version: '3.3'
 services:
     server:
-        container_name: character_gen_server
-        image: tsamsonqa/character_gen_server
+        container_name: character_generator_server
+        image: tsamsonqa/character_generator_server:latest
         build: ./server
         ports: 
         -   published: 5000
             target: 5000
         environment:
             DATABASE_URI: ${DATABASE_URI}
+        deploy:
+            replicas: 3
 
     class_api:
         container_name: class_api
-        image: tsamsonqa/class_api
+        image: tsamsonqa/class_api:latest
         build: ./class_api
+        deploy:
+            replicas: 2
         
     race_api:
         container_name: race_api
-        image: tsamsonqa/race_api
+        image: tsamsonqa/race_api:latest
         build: ./race_api
+        deploy:
+            replicas: 2
+
+    alignment_api:
+        container_name: alignment_api
+        image: tsamsonqa/alignment_api:latest
+        build: ./alignment_api
+        deploy:
+            replicas: 2
