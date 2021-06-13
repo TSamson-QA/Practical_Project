@@ -1,5 +1,5 @@
 FROM python:latest
-WORKDIR /app
+WORKDIR /Practical_Project/alignment_api
 COPY . .
 RUN pip install flask
 EXPOSE 5003
