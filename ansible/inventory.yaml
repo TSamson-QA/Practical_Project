@@ -6,9 +6,9 @@ all:
     workers:
       hosts:
         worker-1:
-    # load-balancer:
-    #   hosts:
-    #     nginx:
+    load-balancer:
+      hosts:
+        nginx:
 
   vars:
     ansible_user: jenkins
