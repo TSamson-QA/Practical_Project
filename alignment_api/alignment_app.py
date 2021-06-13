@@ -23,6 +23,8 @@ def get_alignment():
 
     gen_alignment = alignment.get(align_value)
 
-    return gen_alignment
+    send_alignment = requests.post('http://character_generator_server:5000/', data=gen_alignment).text
+
+    return send_alignment
 
 if __name__ == "__main__": app.run(host="0.0.0.0", port=5003)
