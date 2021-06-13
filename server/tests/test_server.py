@@ -32,7 +32,7 @@ class TestBase(TestCase):
         with requests_mock.Mocker() as mocker:
             mocker.get('http://class_api:5001/get_class', text='Druid')
             mocker.get('http://race_api:5002/get_race', text='Human')
-            mocker.get('http://alignment_api:5003/get_alignment', text='True Neutral')
+            mocker.get('http://character_generator_alignment_api:5003/get_alignment', text='True Neutral')
             response = self.client.get(url_for('home'))
             self.assertEqual(response.status_code, 200)
             self.assertIn(b'The generated character is a Human Druid with an alignment of True Neutral', response.data)
