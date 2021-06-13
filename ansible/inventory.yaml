@@ -3,9 +3,9 @@ all:
     managers:
       hosts:
         manager:
-    workers:
-      hosts:
-        worker-1:
+    # workers:
+    #   hosts:
+    #     worker-1:
     load-balancer:
       hosts:
         nginx:
