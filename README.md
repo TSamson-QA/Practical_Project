@@ -10,7 +10,8 @@
  - [First Working Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#first-working-build)
  - [Second Working Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#second-working-build)
  - [Final Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#final-build)
- - [Test-Results](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#test-results)
+ - [Test Results](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#test-results)
+ - [Front-End Application](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#front-end-application)
 
 
 
@@ -114,6 +115,24 @@ Here, you can see the Manager and Worker-1 nodes running properly in Swarm.
 
 ## Test Results
 
+Through Jenkins, I was able to automate testing of the different APIs using Pytest.
 
+![Class-test](https://github.com/TSamson-QA/Practical_Project/blob/main/images/class-test.PNG)
+
+The class test chooses one of the classes from the selection and tests the output of it. I used a for loop to iterate this test 20 times for increased accuracy.
+
+![race-test](https://github.com/TSamson-QA/Practical_Project/blob/main/images/race_test.PNG)
+
+Just like the class testing, a race is selected and the output of it is tested. This test is again repeated 20 times.
+
+![align-test](https://github.com/TSamson-QA/Practical_Project/blob/main/images/align-test.PNG)
+
+In the alignment test, an error is thrown. This may be related to the application not working as intended and the test may be failing for the same reason. There is 100% coverage for all the tests, but only the alignment one fails.
+
+## Front-End Application
+
+![Front-end](https://github.com/TSamson-QA/Practical_Project/blob/main/images/final_app.PNG)
+
+The front end of the app works as planned (except the problem with the alignment.) A race and class is randomly selected and output. A alignment would usually be calculated here, but due to the error previously mentioned, I manually set it to "True Neutral" in order for the application to function. All of these results are then stored in a database, and the previous 5 results are displayed, being pulled from the database.
 
 
