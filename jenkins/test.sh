@@ -21,3 +21,7 @@ cd ..
 cd race_api
 python3 -m pytest --cov=race_app --cov-report term-missing
 cd ..
+
+cd alignment_api
+python3 -m pytest --cov=race_app --cov-report term-missing
+cd ..
