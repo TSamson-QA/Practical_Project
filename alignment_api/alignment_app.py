@@ -4,8 +4,8 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/get_align')
-def get_align():
+@app.route('/get_alignment')
+def get_alignment():
     class_ = requests.get('http://character_generator_class_api:5001/get_class').text
     race = requests.get('http://character_generator_race_api:5002/get_race').text
 
@@ -25,4 +25,4 @@ def get_align():
 
     return gen_alignment
 
-if __name__ == "__main__": app.run(host="0.0.0.0", port=5003)
+if __name__ == "__main__": app.run(host="35.189.119.200", port=5003)
