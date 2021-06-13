@@ -20,7 +20,7 @@ class Characters(db.Model):
 def home():
     class_ = requests.get('http://character_generator_class_api:5001/get_class').text
     race = requests.get('http://character_generator_race_api:5002/get_race').text
-    alignment = requests.post('http://character_generator_alignment_api:5000/get_alignment').text
+    alignment = requests.get('http://character_generator_alignment_api:5003/get_alignment').text
     #alignment = "True Neutral"
 
 
