@@ -24,7 +24,8 @@ pipeline{
         stage("Build"){
             steps{
                 //docker-compose build
-                sh 'docker system prune --force --all'
+                sh 'docker-compose down'
+                sh 'docker rm -f $(docker ps -a -q)'
                 sh 'docker-compose build'
             }
         }
