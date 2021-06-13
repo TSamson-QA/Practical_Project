@@ -6,6 +6,7 @@
  - [Scope](https://github.com/TSamson-QA/Practical_Project#scope)
  - [My Approach](https://github.com/TSamson-QA/Practical_Project#my-approach)
  - [CI/CD](https://github.com/TSamson-QA/Practical_Project#continuous-integration-and-deployment)
+ - [Risk Assessment](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#risk-assessment)
  - [Jira Board](https://github.com/TSamson-QA/Practical_Project#jira-board)
  - [First Working Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#first-working-build)
  - [Second Working Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#second-working-build)
