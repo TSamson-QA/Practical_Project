@@ -10,9 +10,9 @@
   - docker
   - worker
 
-- hosts: nginx
-  become: true
-  roles:
-  - nginx
+# - hosts: nginx
+#   become: true
+#   roles:
+#   - nginx
 
 
