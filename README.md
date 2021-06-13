@@ -9,6 +9,8 @@
  - [Jira Board](https://github.com/TSamson-QA/Practical_Project#jira-board)
  - [First Working Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#first-working-build)
  - [Second Working Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#second-working-build)
+ - [Final Build](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#final-build)
+ - [Test-Results](https://github.com/TSamson-QA/Practical_Project/blob/main/README.md#test-results)
 
 
 
@@ -83,7 +85,7 @@ Now that SQL has been fully integrated, the Jira board has been updated in accor
 
 ![Jira3](https://github.com/TSamson-QA/Practical_Project/blob/main/images/jira-3.PNG)
 
-## Final Working Build
+## Final Build
 The final version of my application has fully integrated Jenkins, NGINX, Ansible, and Docker Swarm into it. The application is fully built, tested and deployed within Jenkins, as previously shown [here](https://github.com/TSamson-QA/Practical_Project#continuous-integration-and-deployment).
 
 While I am able to have the application deployed through Jenkins, there are, however, issues connecting to Service-4 through port 5003.
@@ -95,6 +97,22 @@ Due to this error, which I was unable to fix, the application cannot be used as 
 ![Error-Line](https://github.com/TSamson-QA/Practical_Project/blob/main/images/error-line.PNG)
 
 The marked line causes the failure, despite me ensuring that all elements were names correctly, including the requests HTTP. Due to this, I ensure that there was a backup I could use, as seen commented. This line sets the alignment manually, allowing the application to run, generating a random class and race as expected, but setting the alignment as True Neutral.
+
+Below are images showing the status of NGINX and Docker services, showing that all services are running.
+
+![Docker-Service](https://github.com/TSamson-QA/Practical_Project/blob/main/images/docker-service.png)
+
+Through Jenkins, The server, class_api, race_api and alignment_api have all been started and are running correctly.
+
+![NGINX-Service](https://github.com/TSamson-QA/Practical_Project/blob/main/images/nginx-service.PNG)
+
+The NGINX service, used for load balancing has been started and is running as planned.
+
+![Swarm-Nodes](https://github.com/TSamson-QA/Practical_Project/blob/main/images/swarm-nodes.PNG)
+
+Here, you can see the Manager and Worker-1 nodes running properly in Swarm.
+
+## Test Results
 
 
 
