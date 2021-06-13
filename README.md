@@ -57,6 +57,10 @@ As the image shows, there are several key steps in the pipeline:
  6. Configuration Management: Configures docker machines to ensure they are all capable of running application.
  7. Deploy: Environmental variables are set and the stack is deployed with the Docker-compose file.
 
+## Risk Assessment
+
+![Risk Assessment](https://github.com/TSamson-QA/Practical_Project/blob/main/images/risk-assessment.PNG)
+
 ## Jira Board
 My first draft of my Jira board has the first issues that need to be addressed, as well as issues that will need to be worked on through the project.
 You can find the link to the Jira Board [here.](https://ajcacademyproject.atlassian.net/jira/software/projects/PP/boards/7)
