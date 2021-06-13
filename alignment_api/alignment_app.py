@@ -21,7 +21,8 @@ def get_alignment():
     4:'Lawful Neutral', 5:'True Neutral', 6:'Chaotic Neutral', 
     7:'Lawful Evil', 8:'Neutral Evil', 9:'Chaotic Evil'}
 
-    gen_alignment = alignment.get(align_value)
+    #gen_alignment = alignment.get(align_value)
+    gen_alignment = "Lawful Good"
 
     return gen_alignment
 
