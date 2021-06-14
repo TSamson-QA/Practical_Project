@@ -5,7 +5,7 @@ all:
         manager:
     workers:
       hosts:
-        worker-1:
+        
     load-balancer:
       hosts:
         nginx:
